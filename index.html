@@ -13,7 +13,7 @@
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg fixed-top" style="background-color: transparent;">
+    <nav class="navbar navbar-expand-lg bg-none fixed-top" id="navbar">
       <div class="container-fluid">
         <a class="navbar-brand" href="#" style = "color: rgb(7,55,99);"><b>Ng Ray Zin</b></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,210 +22,174 @@
         <div class="collapse navbar-collapse customclass bg-light topnav" id="navbarText">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
             <li class="nav-item">
-              <a class="nav-link active page-scroll" href="#Home">Home</a>
+              <a class="nav-link active" href="#Home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link page-scroll" href="#About">About</a>
+              <a class="nav-link" href="#About">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link page-scroll" href="#Projects">Projects</a>
+              <a class="nav-link" href="#Projects">Projects</a>
             </li>
           </ul>
-          <button class="navbar-brand addmore" title="resume" onclick="window.open('images/Resume.pdf')" style = "border: none;background-color: transparent;">
+          <button type="button" title="resume" class="navbar-brand" onclick="window.open('images/Resume.pdf')" style = "border: none;background-color: transparent;" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Resume">
             <img src="images/resumeicon.png" height="30px" width="30px" alt="resume">
           </button>
         </div>
       </div>
     </nav>
   </header>
-  <section>
-    <span class = "span" id="Home"></span>
-    <div class="card-img-overlay text-white container" style = "padding-left: 10%;padding-top: 10%;">
-      <div class = "row justify-content-center mx-auto">
-        <div class="col-md-2 float-md-end mb-3" style="padding-top:5%; margin-right: 10%;"> 
-          <img src="images/my-face.jpg" class = "rounded-circle " alt="Avatar">
-        </div>
-        <div class = "col-md-6" style = "padding-top: 2%;">
-          <h1 class="card-title header1">Hello,</h1>
-          <h2 class="card-title header1">I am Ng Ray Zin</h2><br>
-          <p class="card-text header2">Second year Information Technology student at
-            Ngee Ann Polytechnic
-          </p>
-          <button type="button" onclick="location.href='#About'" class="btn btn-lg btn-outline-info btn-rounded" style = "font-family: 'Fuzzy Bubbles', cursive;margin-top:2%;">About me &darr;</button>
-        </div>
-      </div>
-    </div>
-    <div class="area" >
-      <ul class="circles">
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-      </ul>
-    </div >
-  </section><br><br>
-  <section>
-    <span class = "span" id="About"></span>
-    <div class = "row g-0" style="padding-left: 5%;padding-right: 5%;">
-      <div class = "col-md-6 offset-md-3 mx-auto section">
-        <h1>About me</h1>
-        <p>
-          ​I graduated from Zhenghua Secondary School and I am now currently studying at Ngee Ann Polytechnic. I have a great interest in the tech industry, hence, I took up the information technology course to further improve my skills and to pursue what I am interested in.<br><br>While in this course, I have explored many new things like applied analytics, mobile application development, web development and databases. These newly discovered skills are the few that I enjoy and can help me scope down to a specific role in the tech industry. 
-        </p>
-      </div>
-    </div>
-    <div class="row g-0">
-      <div class = "col-md-6 float-md-end mb-3 section" style="padding: 5%;">
-        <nav>
-          <div class="nav justify-content-center nav-tabs nav-fill" id="nav-tab" role="tablist">
-            <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Education</button>
-            <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Experiences</button>
-            <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Achievements</button>
+  <div data-bs-spy="scroll" data-bs-target="#navbar" class="scrollspy-example" tabindex="0">
+    <section id="Home">
+      <div class="card-img-overlay text-white container-fluid" style = "padding-left: 10%;padding-top: 10%;">
+        <div class = "row justify-content-center mx-auto">
+          <div class="col-md-2 float-md-end mb-3" style="padding-top:5%; margin-right: 10%;"> 
+            <img src="images/my-face.jpg" class = "rounded-circle " alt="Avatar">
           </div>
-        </nav>
-        <div class="tab-content" id="nav-tabContent">
-          <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-            <div class="row g-0 justify-content-around">
-              <div class="nav flex-column nav-pills me-3 col-4 d-flex align-items-start" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Ngee Ann Polytechnic</button>
-                <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Zhenghua Secondary School</button>
-              </div>
-              <div class="tab-content col-md-6 d-flex align-items-start" id="v-pills-tabContent" style="border: 1px solid #5864FF;padding:8px;border-radius: 5%;">
-                <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-                  2021-2024<br><br>Currently a year 2 student studying Information Technology<br><br>
-                  <p>Accomplishments</p>
-                  <ul>
-                    <li>Distinction in Mobile Application development</li>
-                    <li>3.9 gpa achieved in year 2 sem 1</li>
-                  </ul>
-                </div>
-                <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
-                  2017-2020<br><br>Graduated with L1R4 of 15<br><br>
-                  <p>Accomplishments</p>
-                  <ul>
-                    <li>Good Progress Award in 2019</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-            <div class="row g-0 justify-content-around">
-              <div class="nav flex-column nav-pills me-3 col-4 d-flex align-items-start" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">CyberLife Ai</button>
-              </div>
-              <div class="tab-content col-md-6 d-flex align-items-start" id="v-pills-tabContent" style="border: 1px solid #5864FF;padding:8px;border-radius: 5%;">
-                <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-                  August 2022 - September 2022<br><br> role: Intern<br><br>I worked in CyberLife Ai as an intern and helped design and developed multiple mobile applications using various tools like figma and flutter. These applications are used to help enhance medical systems.
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-            <ul>
-              <li>
-                <h5>Singapore Computer Society —Splash Award Competition</h5>
-                <p>Participated in scs splash award competition in a team of 3 and pitched
-                  our idea to replace exam papers and revision notes with an app. Received
-                  award of participation.
-                  </p>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section>
-    <span class = "span" id="Projects"></span>
-    <div class = "section">
-      <h1>Projects</h1><br><br>
-      <div class = "row g-0">
-        <div style="text-align:left; ">
-          <h2 style="color:rgb(7,55,99);float: left;margin-right: 10px;">Socrata - study better</h2> 
-          <a
-              class="btn text-white btn-floating m-1"
-              style="background-color: #333333;"
-              href="https://github.com/iirquhs-np/socrata"
-              target="_blank"
-              role="button"
-              ><i class="fa fa-github"></i
-            ></a>
-          <hr>
-          <div class="col-md-6 float-md-end mb-3"  style="margin-top: 10%;">
-            <a href = "https://play.google.com/store/apps/details?id=sg.edu.np.mad.socrata" target = "_blank">
-              <img src="images/socrata.png" width = "100%">
-            </a> 
-          </div>
-          <div class = "col-1"></div>
-          <div class="col col-md-4 my-auto">
-            <span class="badge text-bg-primary">Android Studio</span>
-            <span class="badge text-bg-primary">Java</span>
-            <span class="badge text-bg-primary">Firebase</span>
-            <span class="badge text-bg-primary">Figma</span><br><br>
-            <p style="display: block;line-height: 25px;">
-              Socrata is a FREE student productivity app that enables you to stay on track and keep you stress free!<br><br>
-              This is an individual and group assignment for the module Mobile Application Development.  <br><br>
-              Contributed in design and the backend of the main functions of this mobile applciation
+          <div class = "col-md-6" style = "padding-top: 2%;">
+            <h1 class="card-title header1">Hello,</h1>
+            <h2 class="card-title header1">I am Ng Ray Zin</h2><br>
+            <p class="card-text header2">Second year Information Technology student at
+              Ngee Ann Polytechnic
             </p>
+            <button type="button" onclick="location.href='#About'" class="btn btn-lg btn-outline-info btn-rounded" style = "font-family: 'Fuzzy Bubbles', cursive;margin-top:2%;">About me &darr;</button>
           </div>
         </div>
-        <br><br>
-        <div class = "row g-0" style="margin-top: 10%;">
+      </div>
+      <div class="area" >
+        <ul class="circles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+        </ul>
+      </div >
+    </section><br><br>
+    <section  id="About">
+      <div class = "row g-0" style="padding-left: 5%;padding-right: 5%;">
+        <div class = "col-md-6 offset-md-3 mx-auto section">
+          <h1>About me</h1>
+          <p>
+            ​I graduated from Zhenghua Secondary School and I am now currently studying at Ngee Ann Polytechnic. I have a great interest in the tech industry, hence, I took up the information technology course to further improve my skills and to pursue what I am interested in.<br><br>While in this course, I have explored many new things like applied analytics, mobile application development, web development and databases. These newly discovered skills are the few that I enjoy and can help me scope down to a specific role in the tech industry. 
+          </p>
+        </div>
+      </div>
+      <div class="row g-0">
+        <div class = "col-md-6 float-md-end mb-3 section" style="padding: 5%;">
+          <nav>
+            <div class="nav justify-content-center nav-tabs nav-fill" id="nav-tab" role="tablist">
+              <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Education</button>
+              <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Experiences</button>
+              <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Achievements</button>
+            </div>
+          </nav>
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+              <div class="row g-0 justify-content-around">
+                <div class="nav flex-column nav-pills me-3 col-4 d-flex align-items-start" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                  <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Ngee Ann Polytechnic</button>
+                  <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Zhenghua Secondary School</button>
+                </div>
+                <div class="tab-content col-md-6 d-flex align-items-start" id="v-pills-tabContent" style="border: 1px solid #5864FF;padding:8px;border-radius: 5%;">
+                  <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                    2021-2024<br><br>Currently a year 2 student studying Information Technology<br><br>
+                    <p>Accomplishments</p>
+                    <ul>
+                      <li>Distinction in Mobile Application development</li>
+                      <li>3.9 gpa achieved in year 2 sem 1</li>
+                    </ul>
+                  </div>
+                  <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                    2017-2020<br><br>Graduated with L1R4 of 15<br><br>
+                    <p>Accomplishments</p>
+                    <ul>
+                      <li>Good Progress Award in 2019</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+              <div class="row g-0 justify-content-around">
+                <div class="nav flex-column nav-pills me-3 col-4 d-flex align-items-start" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                  <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">CyberLife Ai</button>
+                </div>
+                <div class="tab-content col-md-6 d-flex align-items-start" id="v-pills-tabContent" style="border: 1px solid #5864FF;padding:8px;border-radius: 5%;">
+                  <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                    August 2022 - September 2022<br><br> role: Intern<br><br>I worked in CyberLife Ai as an intern and helped design and developed multiple mobile applications using various tools like figma and flutter. These applications are used to help enhance medical systems.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+              <ul>
+                <li>
+                  <h5>Singapore Computer Society —Splash Award Competition</h5>
+                  <p>Participated in scs splash award competition in a team of 3 and pitched
+                    our idea to replace exam papers and revision notes with an app. Received
+                    award of participation.
+                    </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="Projects">
+      <div class = "section">
+        <h1>Projects</h1><br><br>
+        <div class = "row g-0">
           <div style="text-align:left; ">
-            <h2 style="color:rgb(7,55,99);float: left;margin-right: 10px;">Pet Adoption Website</h2> 
+            <h2 style="color:rgb(7,55,99);float: left;margin-right: 10px;">Socrata - study better</h2> 
             <a
                 class="btn text-white btn-floating m-1"
                 style="background-color: #333333;"
-                href="https://github.com/ngrayzin/ID-assignment-2"
+                href="https://github.com/iirquhs-np/socrata"
                 target="_blank"
                 role="button"
                 ><i class="fa fa-github"></i
               ></a>
             <hr>
-            <div class="col-md-6 float-md-end mb-3" style="margin-top: 5%;">
-              <a href = "https://ngrayzin.github.io/ID-assignment-2/" target = "_blank">
-                <img src="images/pet adoption.png" width = "100%">
+            <div class="col-md-6 float-md-end mb-3"  style="margin-top: 10%;">
+              <a href = "https://play.google.com/store/apps/details?id=sg.edu.np.mad.socrata" target = "_blank">
+                <img src="images/socrata.png" width = "100%">
               </a> 
             </div>
             <div class = "col-1"></div>
             <div class="col col-md-4 my-auto">
-              <span class="badge text-bg-primary">HTML</span>
-              <span class="badge text-bg-primary">CSS</span>
-              <span class="badge text-bg-primary">JS</span>
-              <span class="badge text-bg-primary">JQuery</span>
-              <span class="badge text-bg-primary">Bootstrap</span>
-              <span class="badge text-bg-primary">Lottie</span>
-              <span class="badge text-bg-primary">API</span>
-              <span class="badge text-bg-primary">RestDB</span>
-              <span class="badge text-bg-primary">Photoshop</span><br><br>
+              <span class="badge text-bg-primary">Android Studio</span>
+              <span class="badge text-bg-primary">Java</span>
+              <span class="badge text-bg-primary">Firebase</span>
+              <span class="badge text-bg-primary">Figma</span><br><br>
               <p style="display: block;line-height: 25px;">
-                A pet adoption website made using multiple web API, restDB and gamified features for the final Interactive Development Project
+                Socrata is a FREE student productivity app that enables you to stay on track and keep you stress free!<br><br>
+                This is an individual and group assignment for the module Mobile Application Development.  <br><br>
+                Contributed in design and the backend of the main functions of this mobile applciation
               </p>
             </div>
           </div>
           <br><br>
           <div class = "row g-0" style="margin-top: 10%;">
             <div style="text-align:left; ">
-              <h2 style="color:rgb(7,55,99);float: left;margin-right: 10px;">Yoasobi Fan Website</h2> 
+              <h2 style="color:rgb(7,55,99);float: left;margin-right: 10px;">Pet Adoption Website</h2> 
               <a
                   class="btn text-white btn-floating m-1"
                   style="background-color: #333333;"
-                  href="https://github.com/ngrayzin/id-assignment"
+                  href="https://github.com/ngrayzin/ID-assignment-2"
                   target="_blank"
                   role="button"
                   ><i class="fa fa-github"></i
                 ></a>
               <hr>
               <div class="col-md-6 float-md-end mb-3" style="margin-top: 5%;">
-                <a href = "https://ngrayzin.github.io/id-assignment/" target = "_blank">
-                  <img src="images/yoasobi website.png" width = "100%">
+                <a href = "https://ngrayzin.github.io/ID-assignment-2/" target = "_blank">
+                  <img src="images/pet adoption.png" width = "100%">
                 </a> 
               </div>
               <div class = "col-1"></div>
@@ -233,52 +197,49 @@
                 <span class="badge text-bg-primary">HTML</span>
                 <span class="badge text-bg-primary">CSS</span>
                 <span class="badge text-bg-primary">JS</span>
-                <span class="badge text-bg-primary">Adobe XD</span><br><br>
+                <span class="badge text-bg-primary">JQuery</span>
+                <span class="badge text-bg-primary">Bootstrap</span>
+                <span class="badge text-bg-primary">Lottie</span>
+                <span class="badge text-bg-primary">API</span>
+                <span class="badge text-bg-primary">RestDB</span>
+                <span class="badge text-bg-primary">Photoshop</span><br><br>
                 <p style="display: block;line-height: 25px;">
-                  A fan website of Yoasobi using HTMl for the first project in Interactive Development
+                  A pet adoption website made using multiple web API, restDB and gamified features for the final Interactive Development Project
                 </p>
               </div>
             </div>
             <br><br>
-      <!--<div class="d-flex align-items-start">
-        <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-          <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Socrata</button>
-          <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Yoasobi website</button>
-          <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Pet Adoption website</button>
-        </div>
-        <div class="tab-content" id="v-pills-tabContent" style="margin-left: 15%;">
-          <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-            <div style="display:inline;text-align:left; float: left;margin-left: 10%;">
-              <h2 style="color:rgb(7,55,99)">Socrata - study better</h2> 
-              <hr>
-              <div style="display:inline;text-align:left; ">
-                <a>
-                  <img src="images/socrata.png" width="100" height="150">
-                </a> 
-                <div style="float: right">
-                  <div>
-                    Track your homework and study times in one app.<br>
-
-                    An assignment for partial fulfilment of the coursework of Mobile Applications development AY2022/23 in Ngee Ann Polytechnic<br>
-
-                    Socrata is a FREE student productivity app that enables you to stay on track and keep you stress free!<br>
-
-                    A numbered progress section allows you to see a brief overview of the current week's progress! Take care of urgent tasks needed to be completed by the week!<br>
-
-                    Study for your modules with our in-built stopwatch! Add goals to keep you focused!<br>
-
-                    Create new homework tasks to stop your procrastination!<br>
-                    I contributed a lot to this project where I helped design and the backend of the main functions of this mobile applciation
-                  </div>
+            <div class = "row g-0" style="margin-top: 10%;">
+              <div style="text-align:left; ">
+                <h2 style="color:rgb(7,55,99);float: left;margin-right: 10px;">Yoasobi Fan Website</h2> 
+                <a
+                    class="btn text-white btn-floating m-1"
+                    style="background-color: #333333;"
+                    href="https://github.com/ngrayzin/id-assignment"
+                    target="_blank"
+                    role="button"
+                    ><i class="fa fa-github"></i
+                  ></a>
+                <hr>
+                <div class="col-md-6 float-md-end mb-3" style="margin-top: 5%;">
+                  <a href = "https://ngrayzin.github.io/id-assignment/" target = "_blank">
+                    <img src="images/yoasobi website.png" width = "100%">
+                  </a> 
                 </div>
-              </div><br><br>
-          </div>
-          <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">...</div>
-          <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">...</div>
-        </div>
-      </div>
-    </div>-->
-  </section>
+                <div class = "col-1"></div>
+                <div class="col col-md-4 my-auto">
+                  <span class="badge text-bg-primary">HTML</span>
+                  <span class="badge text-bg-primary">CSS</span>
+                  <span class="badge text-bg-primary">JS</span>
+                  <span class="badge text-bg-primary">Adobe XD</span><br><br>
+                  <p style="display: block;line-height: 25px;">
+                    A fan website of Yoasobi using HTMl for the first project in Interactive Development
+                  </p>
+                </div>
+              </div>
+              <br><br>
+    </section>
+  </div>
   <footer class="bg-light text-center text-white" style = "clear: left;">
     <!-- Grid container -->
     <div class="container p-4 pb-0">

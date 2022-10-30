@@ -47,6 +47,10 @@ body{
   background-color: #e4e4e4;
 }
 
+#About, #Projects{
+  padding-top: 100px;
+}
+
 .section{
   margin: auto;
   width: 60%;

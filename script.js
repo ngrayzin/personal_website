@@ -9,16 +9,6 @@
     
    
    
-   
-   $(document).ready(function () {
-    $('.page-scroll').click(function(event){
-            //remove all pre-existing active classes
-            $('.page-scroll').removeClass('active');
-    
-            //add the active class to the link we clicked
-            $(this).addClass('active');
-        });
-    });
 
       window.onscroll = function () {
         const header_navbar = document.querySelector(".navbar");
